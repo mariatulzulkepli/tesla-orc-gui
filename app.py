@@ -39,3 +39,16 @@ if st.button("Calculate Performance"):
     with col2:
         st.metric("Net Work (kJ/kg)", Wnet)
         st.metric("Thermal Efficiency (%)", eta)
+
+st.markdown("---")
+st.subheader("T–s Diagram")
+
+if fluid == "R134a":
+    st.image("r134a.jpg", use_column_width=True)
+elif fluid == "R141b":
+    st.image("r141b.jpg", use_column_width=True)
+elif fluid == "R245fa":
+    st.image("r245fa.jpg", use_column_width=True)
+else:
+    st.image("r1233zd(E).jpg", use_column_width=True)
+
