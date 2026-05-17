@@ -43,6 +43,10 @@ if st.button("Calculate Performance"):
 st.markdown("---")
 st.subheader("T–s Diagram")
 
+# ✅ Show which working fluid is being displayed
+st.write(f"Showing T–s diagram for **{fluid}**")
+
+# ✅ Display correct diagram based on selected fluid
 if fluid == "R134a":
     st.image("r134a.jpg", use_column_width=True)
 elif fluid == "R141b":
@@ -52,3 +56,13 @@ elif fluid == "R245fa":
 else:
     st.image("r1233zd(E).jpg", use_column_width=True)
 
+# ✅ Add interpretation/explanation (very important for FYP)
+if fluid == "R134a":
+    st.info("R134a is used as the reference working fluid. It shows baseline performance with lower net work output compared to other fluids.")
+elif fluid == "R141b":
+    st.success("R141b demonstrates the highest turbine work output and thermal efficiency due to its higher vapour density.")
+elif fluid == "R245fa":
+    st.info("R245fa shows moderate performance, with turbine work output higher than R134a but lower than R141b.")
+else:
+    st.info("R1233zd(E) is an environmentally friendly alternative with good performance comparable to R245fa.")
+``
