@@ -27,16 +27,15 @@ if st.button("Calculate Performance"):
     else:
         Wpump, Wturb, Wnet, eta = 0.54, 9.65, 9.11, 4.01
 
-   st.subheader("Performance Results")
+    # ✅ IMPORTANT: THIS MUST BE INSIDE the button block
+    st.subheader("Performance Results")
 
-col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2)
 
-with col1:
-    st.metric("Pump Work (kJ/kg)", Wpump)
-    st.metric("Turbine Work (kJ/kg)", Wturb)
+    with col1:
+        st.metric("Pump Work (kJ/kg)", Wpump)
+        st.metric("Turbine Work (kJ/kg)", Wturb)
 
-with col2:
-    st.metric("Net Work (kJ/kg)", Wnet)
-    st.metric("Thermal Efficiency (%)", eta)
-    
-  
+    with col2:
+        st.metric("Net Work (kJ/kg)", Wnet)
+        st.metric("Thermal Efficiency (%)", eta)
