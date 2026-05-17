@@ -70,6 +70,11 @@ if st.button("Calculate Performance"):
     else:
         st.info("R1233zd(E) is an environmentally friendly alternative with good performance comparable to R245fa.")
 
+# ✅ ADD THIS LINE HERE
+st.caption("Cycle representation is based on Rankine cycle assumptions with Tesla turbine efficiency applied.")
+``
+
+
 # ✅ FOOTER
 st.markdown("---")
 st.subheader("About")
