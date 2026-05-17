@@ -38,4 +38,5 @@ with col1:
 with col2:
     st.metric("Net Work (kJ/kg)", Wnet)
     st.metric("Thermal Efficiency (%)", eta)
+    
   
