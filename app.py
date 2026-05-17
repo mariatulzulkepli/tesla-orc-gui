@@ -72,8 +72,6 @@ if st.button("Calculate Performance"):
 
 # ✅ ADD THIS LINE HERE
 st.caption("Cycle representation is based on Rankine cycle assumptions with Tesla turbine efficiency applied.")
-``
-
 
 # ✅ FOOTER
 st.markdown("---")
